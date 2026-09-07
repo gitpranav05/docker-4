@@ -15,3 +15,11 @@ jobs:
         with :
           usename: ${{secrets.DOCKERHUB_USERNAME}}
           passworrd: ${{secrets.DOCKERHUB_TOKEN}}
+
+      - name : Build and push
+        uses : docker/build-push-action@v4
+        with:
+          context : .
+          file : ./docker/Dockerfile.be
+          push : true
+          tags : ${{secrets.DOCKERHUB_USERNAME}}/docker-tut-backend:${{github.sha}}
