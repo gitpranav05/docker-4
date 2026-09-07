@@ -5,6 +5,10 @@ node_modules
 .pnp
 .pnp.js
 
+ssh-be-server
+ssh-be-server.pub
+
+
 # Local env files
 .env
 .env.local
