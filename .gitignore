@@ -8,6 +8,7 @@ node_modules
 ssh-be-server
 ssh-be-server.pub
 
+/.github/workflows/a.json
 
 # Local env files
 .env

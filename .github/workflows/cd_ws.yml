@@ -2,7 +2,7 @@ name: Deploy the websocket
 
 on:
   push:
-    braanches: [main]
+    branches: [main]
 jobs:
   build:
     runs-on: ubuntu-latest
